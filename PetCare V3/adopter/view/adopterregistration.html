@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Adopter Registration - PetCare</title>
+    <link rel="stylesheet" href="../css/adopterregistrationstyle.css">
+</head>
+
+<body>
+    <h1 id="brand" class="page-title" align="center">PetCare</h1>
+    <h2 id="heading" class="page-subtitle" align="center">Adopter Registration</h2>
+    <p id="tagline" class="tagline" align="center">Give a pet a loving home!</p>
+
+    <form id="registrationForm" class="registration-form">
+        <fieldset id="personalInfo" class="form-section">
+            <legend>Personal Information</legend>
+
+            <table id="personalTable" class="form-table" align="center">
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email Address:</label></td>
+                    <td><input type="email" id="email" name="email" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="dob" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="3" cols="25" class="form-control resizable-textarea"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset id="accountSecurity" class="form-section">
+            <legend>Account Security</legend>
+
+            <table id="securityTable" class="form-table" align="center">
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" minlength="8" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password" minlength="8" class="form-control"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset id="adoptionInfo" class="form-section">
+            <legend>Pet Adoption Information</legend>
+
+            <table id="adoptionTable" class="form-table" align="center">
+                <tr>
+                    <td><label for="pettype">Preferred Pet:</label></td>
+                    <td>
+                        <select id="pettype" name="pettype" class="form-control">
+                            <option value="">Select a pet type</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="bird">Bird</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Have you owned a pet before?</label></td>
+                    <td>
+                        <input type="radio" id="yes" name="experience" value="yes" class="choice-input">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" id="no" name="experience" value="no" class="choice-input">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="home">Home Environment:</label></td>
+                    <td>
+                        <select id="home" name="home" class="form-control">
+                            <option value="">Select environment</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="reason">Why do you want to adopt?</label></td>
+                    <td><textarea id="reason" name="reason" rows="4" cols="40" class="form-control resizable-textarea"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <table id="actionTable" class="action-table" align="center">
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="checkbox" id="guidelines" name="guidelines" class="choice-input">
+                    <label for="guidelines">I agree to follow the adoption guidelines</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" id="registerButton" class="btn-register" value="Register">
+                    <input type="reset" id="clearButton" class="btn-clear" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <center id="loginPrompt" class="login-prompt">
+        Already have an account?
+        <a id="loginLink" class="login-link" href="../../commonui/view/login.html">Login</a>
+    </center>
+</body>
+</html>

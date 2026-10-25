@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Pet Care - Login</title>
+    <link rel="stylesheet" href="../css/loginstyle.css">
+</head>
+<body>
+
+    <h1 class="page-title" align="center">Welcome</h1>
+    <h2 class="page-subtitle" align="center">Login to your pet care's hub</h2>
+
+    <form class="login-form">
+        <table class="login-table" align="center">
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <input type="email" id="email" name="email" class="form-control">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td>
+                    <input type="password" id="password" name="password" class="form-control">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="role">Choose Role:</label></td>
+                <td>
+                    <select id="role" name="role" class="form-control">
+                        <option value="">Select your role</option>
+                        <option value="adopter">Adopter</option>
+                        <option value="pet_owner">Pet Owner</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" class="btn-login" value="Login">
+                    <input type="reset" class="btn-clear" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <p class="register-text" align="center">Don't have an account? Register as:</p>
+
+    <table class="register-table" align="center">
+        <tr>
+            <td>
+                <a class="register-link" href="../../adopter/view/adopterregistration.html">Adopter</a>
+            </td>
+            <td>
+                <a class="register-link" href="../../petowner/view/petownerregistration.html">Pet Owner</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <a class="register-link" href="../../volunteer/view/volunteerregistrationpage.html">Volunteer</a>
+            </td>
+            <td>
+                <a class="register-link" href="../../admin/view/adminregistration.html">Admin</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+ 
+h1, h2 {
+  font-family: "Comic Sans MS", "Chalkboard SE", "Ink Free", cursive;
+  color: black;
+}
+ 
+header {
+  background-color: #c9a0f5;           
+  padding: 10px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px gray;
+  position: sticky;                   
+  top: 0;
+  z-index: 100;
+}
+ 
+header h1,
+header h2,
+header p {
+  margin: 5px 0;
+}
+ 
+ 
+/*  Form box  */
+form {
+  max-width: 450px;                    
+  margin: 30px auto;                   
+  padding: 25px;
+  background-color: #caaaed;           
+  border: 2px solid #b388eb;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px gray;
+}
+ 
+ 
+/* Labels  */
+label {
+  display: block;                     
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+ 
+ 
+/*  Input boxes  */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #b388eb;
+  border-radius: 10px;
+  font-family: 'Quicksand', Arial, sans-serif;
+  transition: 0.3s;
+}
+ 
+textarea {
+  height: 80px;
+  overflow: auto;                      
+}
+ 
+/* Box changes color when click inside it */
+input:focus,
+textarea:focus {
+  border-color: #7b2cbf;
+  background-color: white;
+}
+ 
+ 
+/* Buttons  */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #b388eb;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: 2px solid #7b2cbf;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ 
+/* Hover effect */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #9b5de5;
+}
+ 

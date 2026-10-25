@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Registration</title>
+    <link rel="stylesheet" href="../css/adminregistrationstyle.css">
+</head>
+<body>
+
+    <h2 id="heading">Admin Registration Form</h2>
+
+    <form class="registration-form">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="name">Full Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td><input type="tel" id="phone"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Security</legend>
+
+            <table>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm" required></td>
+                </tr>
+                <tr>
+                    <td><label for="code">Admin Invitation Code:</label></td>
+                    <td><input type="password" id="code" required></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <div class="buttons">
+            <input type="submit" value="Register" class="register-btn">
+            <input type="reset" value="Clear" class="clear-btn">
+        </div>
+
+        <p class="login-link">
+            Already have an account? <a href="../../commonui/view/login.html">Login</a>
+        </p>
+
+    </form>
+
+</body>
+</html>

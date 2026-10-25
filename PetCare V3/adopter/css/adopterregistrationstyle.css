@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #344e41;
+    background-color: #e6f4ed;
+    overflow-x: hidden;
+}
+
+#brand {
+    color: #176b55;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 10px auto;
+}
+
+.page-title {
+    text-shadow: 1px 2px 3px #c8dcd1;
+}
+
+#heading {
+    color: #52796f;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 10px auto;
+}
+
+.tagline {
+    color: #52796f;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d5e5db;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(35, 80, 65, 0.12);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.form-section {
+    margin: 0 0 22px;
+    padding: 20px;
+    border: 1px solid #b7cfc3;
+    border-radius: 12px;
+    background-color: #fcfefd;
+}
+
+legend {
+    padding: 5px 12px;
+    color: #176b55;
+    font-weight: bold;
+    background-color: #e6f4ed;
+    border-radius: 6px;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 8px;
+}
+
+td {
+    padding: 7px;
+    vertical-align: middle;
+}
+
+label {
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 4px 0;
+    border: 1px solid #b7cfc3;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #238568;
+    box-shadow: 0 0 0 3px rgba(35, 133, 104, 0.15);
+}
+
+.resizable-textarea {
+    resize: vertical;
+}
+
+.choice-input {
+    accent-color: #238568;
+    cursor: pointer;
+}
+
+.action-table {
+    width: 100%;
+    margin: 15px auto 5px;
+    border-spacing: 8px;
+}
+
+.btn-register,
+.btn-clear {
+    padding: 11px 28px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-register {
+    color: #ffffff;
+    background-color: #238568;
+}
+
+.btn-register:hover {
+    background-color: #176b55;
+    transform: translateY(-2px);
+}
+
+.btn-clear {
+    color: #344e41;
+    background-color: #e8eee9;
+}
+
+.btn-clear:hover {
+    background-color: #d3e1d7;
+    transform: translateY(-2px);
+}
+
+.login-prompt {
+    margin: 25px auto;
+    color: #52796f;
+    position: relative;
+    z-index: 1;
+}
+
+.login-link {
+    color: #176b55;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #238568;
+    text-decoration: underline;
+}
+
+body::after {
+    content: "PAWCARE ♥";
+    position: fixed;
+    right: 12px;
+    bottom: 8px;
+    z-index: 0;
+    color: rgba(35, 133, 104, 0.15);
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px 8px;
+        font-size: 14px;
+    }
+
+    #brand {
+        font-size: 2rem;
+    }
+
+    #heading {
+        font-size: 1.25rem;
+    }
+
+    .registration-form {
+        padding: 10px;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    .form-table {
+        border-spacing: 3px;
+    }
+
+    td {
+        padding: 4px;
+    }
+
+    .form-table td:first-child {
+        width: 40%;
+    }
+
+    .resizable-textarea {
+        max-width: 100%;
+    }
+
+    .btn-register,
+    .btn-clear {
+        padding: 9px 16px;
+    }
+
+    .action-table td {
+        overflow-wrap: anywhere;
+    }
+}

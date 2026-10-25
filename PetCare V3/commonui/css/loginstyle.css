@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: "Times New Roman", Arial, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #344e41;
+    background: linear-gradient(to bottom right, #fff8f0, #e6f4ed);
+    overflow-x: hidden;
+}
+
+.page-title {
+    color: #176b55;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 10px auto;
+    text-shadow: 1px 2px 3px #c8dcd1;
+}
+
+.page-subtitle {
+    color: #52796f;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 10px auto 30px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background-color: #ffffff;
+    border: 1px solid #d5e5db;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(35, 80, 65, 0.12);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.login-table {
+    width: 100%;
+    border-spacing: 8px;
+}
+
+td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 11px;
+    margin: 4px 0;
+    border: 1px solid #b7cfc3;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fcfefd;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #238568;
+    box-shadow: 0 0 0 3px rgba(35, 133, 104, 0.15);
+}
+
+.btn-login,
+.btn-clear {
+    padding: 10px 24px;
+    margin: 8px 4px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-login {
+    background-color: #238568;
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #176b55;
+    transform: translateY(-2px);
+}
+
+.btn-clear {
+    background-color: #e8eee9;
+    color: #344e41;
+}
+
+.btn-clear:hover {
+    background-color: #d3e1d7;
+    transform: translateY(-2px);
+}
+
+.register-text {
+    color: #52796f;
+    font-size: 1.05rem;
+    margin: 25px auto 10px;
+}
+
+.register-table {
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #d5e5db;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(35, 80, 65, 0.08);
+    table-layout: fixed;
+    box-sizing: border-box;
+}
+
+.register-link {
+    display: block;
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #f0f8f3;
+    border: 1px solid #d5e5db;
+    border-radius: 8px;
+    color: #176b55;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-link:hover {
+    background-color: #238568;
+    color: white;
+}
+
+body::after {
+    content: "PAWCARE ♥";
+    position: fixed;
+    right: 12px;
+    bottom: 8px;
+    z-index: 0;
+    color: rgba(35, 133, 104, 0.15);
+    font-size: 0.8rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .login-form {
+        padding: 12px;
+    }
+
+    .login-table {
+        border-spacing: 3px;
+    }
+
+    .login-table td {
+        padding: 5px;
+    }
+
+    .form-control {
+        padding: 9px;
+        font-size: 0.9rem;
+    }
+
+    .register-table {
+        padding: 5px;
+    }
+
+    .register-link {
+        padding: 8px 3px;
+    }
+
+    .btn-login,
+    .btn-clear {
+        padding: 9px 15px;
+    }
+}
